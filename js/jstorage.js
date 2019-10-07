@@ -203,7 +203,7 @@
                     _backend = "localStorage";
                     _observer_update = _storage_service.jStorage_update;
                 }
-            } catch(E3) {/* Firefox fails when touching localStorage and cookies are disabled */}
+            } catch(E3) {/* Firefox fails when touching localStorage and/or cookies are disabled */}
         }
         /* Check if browser supports globalStorage */
         else if("globalStorage" in window){
